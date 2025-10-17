@@ -1,4 +1,1 @@
-youtbue,herry ford,1009,true
-estudio ,sergio,2005,true
-ser,w,2005,true
-uprincipito,vitor ,2003,true
+w,e,2005,true

@@ -4,6 +4,9 @@ public class Libro {
     private int anoPublicacion;
     private boolean disponible;
 
+    public Libro() {
+    }
+
     public Libro(String titulo, String autor, int anoPublicacion, boolean disponible) {
         this.titulo = titulo;
         this.autor = autor;
@@ -11,9 +14,10 @@ public class Libro {
         this.disponible = disponible;
     }
 
-    public Libro() {
-    }
-
+    /*
+    quite los getter y los setters por que en el objeto Libro libro1 ya se estan
+    asignando los valores para el constructor y los mostre con libro1.mostrarInfo
+     */
     public void mostrarInfo() {
         System.out.println("******************************");
         System.out.println("Título: " + titulo);
