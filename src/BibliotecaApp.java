@@ -7,11 +7,12 @@ public class BibliotecaApp {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+
         ArrayList<String> objetos = new ArrayList<>();
         File archivoLibro = new File("input/libros.txt");
 
         System.out.println("Bienvenido al registro de libros");
-        System.out.println("-------------------------------");
+        System.out.println("--------------------------------");
 
         System.out.print("Título del libro: ");
         String titulo = sc.nextLine();
@@ -20,14 +21,27 @@ public class BibliotecaApp {
         String autor = sc.nextLine();
 
         int anoPublicacion = 0;
-        try {
-            System.out.print("Año de publicación: ");
-            anoPublicacion = sc.nextInt();// no toca poner numberformatexeption porque nextInt ya lanza el error
-        } catch (InputMismatchException e) {
-            System.out.println("Error: el año debe ser un número entero.");
-            sc.close();
-            return;
+
+        while (true) {
+            try {
+                System.out.print("Año de publicación: ");
+                anoPublicacion = sc.nextInt();
+
+                // Validar que tenga 4 dígitos y no supere el año actual
+                if (anoPublicacion < 1000 || anoPublicacion > 2026) {
+                    throw new IllegalArgumentException("El año debe tener 4 dígitos válidos (entre 1000 y 2026).");
+                }
+
+                break;
+
+            } catch (InputMismatchException e) {
+                System.out.println("Error: el año debe ser un número entero.");
+                sc.nextLine();
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
         }
+
 
         boolean disponible = true;
 
@@ -51,3 +65,5 @@ public class BibliotecaApp {
         sc.close();
     }
 }
+
+
