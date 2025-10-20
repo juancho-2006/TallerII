@@ -60,9 +60,5 @@ public class BibliotecaApp {
         for (String l : libros) {
             System.out.println(l);
         }
-
-        System.out.println("\nFin del programa.");
-        sc.close();
     }
 }
-

@@ -20,6 +20,10 @@ public class Estudiante {
         System.out.println("******************************");
     }
 
+    public String toString() {
+        return nombre + "," + id + "," + promedio;
+    }
+
     public void calcularPromedio(List<Double> notas) {
         double suma = 0.0;
 
@@ -33,6 +37,4 @@ public class Estudiante {
             promedio = 0.0;
         }
     }
-
-
 }

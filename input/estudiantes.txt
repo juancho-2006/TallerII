@@ -1,0 +1,11 @@
+Pepe pollo,101,4.5
+Peo Mateo,102,3.9
+Camilastra pasta,103,4.2
+juanchis,104,3.5
+Valerio perio,105,4.8
+Andres Carnederes,106,2.9
+IT ,107,3.7
+Dravid pit,108,4.0
+Anuel Ruiz,109,3.4
+vitor otavio,110,4.1
+petulio tulio,23123,3.0

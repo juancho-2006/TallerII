@@ -1,1 +1,13 @@
 w,e,2005,true
+we,er,2000,true
+qw,er,1201,true
+23,wr,2000,true
+23,er,2000,true
+qwe,qw,1200,true
+we,we,1222,true
+perrito,ewer,2005,true
+qwe,se,2006,true
+der,we,2006,true
+der,wer,2005,true
+wer,qwer,2005,true
+rt,we,2005,true
