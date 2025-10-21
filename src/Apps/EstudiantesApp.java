@@ -1,3 +1,8 @@
+package Apps;
+
+import clases.Estudiante;
+import clases.FileManager;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -88,7 +93,7 @@ public class EstudiantesApp {
         }
 
         // Guardar en archivo
-        
+
         FileManager.escribirFile(archivo, lineasArchivo);
         System.out.println("\nDatos guardados correctamente.");
         sc.close();
