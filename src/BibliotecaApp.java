@@ -27,8 +27,8 @@ public class BibliotecaApp {
                 System.out.print("Año de publicación: ");
                 anoPublicacion = sc.nextInt();
 
-                // Validar que tenga 4 dígitos y no supere el año actual
-                if (anoPublicacion < 1000 || anoPublicacion > 2026) {
+                // Validar que tenga 4 dígitos y no supere el año actual ( vida util de un año)
+                if (anoPublicacion < -1000 || anoPublicacion > 2026) {
                     throw new IllegalArgumentException("El año debe tener 4 dígitos válidos (entre 1000 y 2026).");
                 }
 
